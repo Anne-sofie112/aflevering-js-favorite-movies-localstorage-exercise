@@ -1,11 +1,55 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+#movies-container,
+#favorites-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+article {
+  width: 220px;
+  background: white;
+  border: 1px solid grey;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: left;
+}
+
+article h2 {
+  margin-bottom: 10px;
+}
+
+article ul {
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.favorite-btn {
+  font-size: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
